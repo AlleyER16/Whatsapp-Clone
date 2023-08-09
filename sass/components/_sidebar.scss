@@ -1,0 +1,349 @@
+.sidebar {
+    flex: 0 0 45rem;
+
+    display: flex;
+    flex-direction: column;
+
+    border-right: 1px solid #eaeaea;
+}
+
+.sidebar-header {
+    background-color: $header-bg;
+    height: 6rem;
+    padding: 0 1.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+
+    &__user {
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: auto;
+        object-fit: cover;
+    }
+
+    &__action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        cursor: pointer;
+
+        & ion-icon {
+            display: block;
+            width: 2.2rem;
+            height: 2.2rem;
+            color: $icon-color;
+        }
+
+        &--md ion-icon {
+            width: 2.6rem;
+            height: 2.6rem;
+        }
+
+        &:active {
+            background-color: rgba(11, 20, 26, 0.1);
+        }
+    }
+}
+
+.sidebar-header2 {
+    background-color: #008069;
+    height: 10.6rem;
+    color: #fff;
+    padding: 1.8rem 2.4rem;
+
+    display: flex;
+    align-items: flex-end;
+    font-size: 1.8rem;
+
+    &__heading {
+        display: flex;
+        align-items: center;
+        gap: 2.4rem;
+
+        & span {
+            cursor: pointer;
+        }
+
+        & ion-icon {
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+        }
+    }
+}
+
+.search-block {
+    height: 4.6rem;
+    border-bottom: 1px solid $border-color;
+    padding: 0 1.4rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+    &__form {
+        flex: 1;
+
+        background-color: $header-bg;
+        height: 3.2rem;
+        border-radius: 0.6rem;
+        padding: 0 1.6rem;
+
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    &__icon-block {
+        margin-right: 2.4rem;
+        cursor: pointer;
+
+        & ion-icon {
+            display: block;
+            width: 1.8rem;
+            height: 1.8rem;
+            color: $icon-color;
+        }
+    }
+
+    &__input {
+        flex: 1;
+        outline: none;
+        border: none;
+        background-color: transparent;
+    }
+
+    &__filter {
+        cursor: pointer;
+
+        & ion-icon {
+            display: block;
+            width: 1.8rem;
+            height: 1.8rem;
+            color: $icon-color;
+        }
+    }
+}
+
+.chat-left {
+    flex: 1;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: transparent;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: rgba(#ccc, 0.8);
+    }
+}
+
+.chat-card {
+    display: flex;
+    gap: 1.8rem;
+
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 1.2rem;
+    padding-right: 0;
+
+    position: relative;
+
+    &:hover {
+        background-color: $header-bg-light;
+    }
+
+    &--active {
+        background-color: $header-bg !important;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        height: 1px;
+        background-color: $border-color;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: calc(100% - 8.4rem);
+    }
+
+    &__left {
+        flex: 0 0 5.6rem;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__icon {
+        display: block;
+        width: 1.8rem;
+        height: 1.8rem;
+        color: $color-primary;
+    }
+
+    &__img-block {
+        width: 5.2rem;
+        height: 5.2rem;
+
+        &--status {
+            border: 2px solid $color-primary-light;
+            border-radius: 50%;
+            background-color: #fff;
+            padding: 2px;
+        }
+    }
+
+    &__img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    &__community {
+        display: flex;
+    }
+
+    &__community div {
+        width: 4.2rem;
+        height: 4.2rem;
+        border-radius: 50%;
+        padding: 3px;
+        background-color: #fff;
+
+        &:not(:first-child) {
+            margin-left: -3.4rem;
+        }
+    }
+
+    // &:hover &__community div {
+    //     background-color: $header-bg-light;
+    // }
+
+    // &--active &__community div {
+    //     background-color: $header-bg;
+    // }
+
+    &__main {
+        flex: 1;
+
+        margin-right: 1.8rem;
+
+        overflow-x: hidden;
+    }
+
+    &__main-archived {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-right: 2.4rem;
+
+        & span {
+            color: $color-primary-light;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__name-date {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+    }
+
+    &__name {
+        flex: 1;
+        color: #111b21;
+    }
+
+    &--unread &__name {
+        font-weight: 500;
+    }
+
+    &__date {
+        font-size: 1.25rem;
+        color: #667781;
+    }
+
+    &--unread &__date {
+        color: $color-primary-light;
+        font-weight: 400;
+    }
+
+    &__footer {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+    }
+
+    &__last-msg {
+        flex: 1;
+        color: #667781;
+        font-size: 1.5rem;
+
+        display: flex;
+        align-items: center;
+        gap: 3px;
+
+        & ion-icon {
+            display: block;
+            width: 1.8rem;
+            height: 1.8rem;
+            color: #53bdeb;
+        }
+    }
+
+    &--unread &__last-msg {
+        color: #3b4a54;
+        font-weight: 500;
+    }
+
+    &__pinned {
+        display: block;
+        color: #8696a0;
+        width: 1.25rem;
+        height: 1.25rem;
+    }
+
+    &__badge {
+        display: inline-block;
+        border-radius: 10rem;
+        padding: 3px 6px;
+        background-color: $color-primary-light;
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    &__more {
+        margin-right: -1.6rem;
+
+        transition: all 0.3s;
+
+        & ion-icon {
+            display: block;
+            color: #8696a0;
+            width: 1.6rem;
+            height: 1.6rem;
+        }
+    }
+
+    &:hover &__more {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <title>WhatsApp</title>
+
+        <link type="text/css" rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <main class="main">
+            <div class="dashboard">
+                <aside class="sidebar">
+                    <div class="sidebar-header">
+                        <img
+                            src="./assets/img/GOAT.jpg"
+                            alt=""
+                            class="sidebar-header__user"
+                        />
+                        <div class="sidebar-header__action">
+                            <ion-icon name="people"></ion-icon>
+                        </div>
+                        <div class="sidebar-header__action">
+                            <ion-icon name="sync"></ion-icon>
+                        </div>
+                        <div class="sidebar-header__action">
+                            <ion-icon name="chatbox-ellipses"></ion-icon>
+                        </div>
+                        <div class="sidebar-header__action">
+                            <ion-icon name="ellipsis-vertical"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="search-block">
+                        <div class="search-block__form">
+                            <span class="search-block__icon-block">
+                                <ion-icon name="search-outline"></ion-icon>
+                            </span>
+                            <input
+                                type="text"
+                                class="search-block__input"
+                                placeholder="Search or start new chat"
+                            />
+                        </div>
+                        <div class="search-block__filter">
+                            <ion-icon name="filter-outline"></ion-icon>
+                        </div>
+                    </div>
+                    <div class="chat-left">
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <ion-icon
+                                    name="archive-outline"
+                                    class="chat-card__icon"
+                                ></ion-icon>
+                            </div>
+                            <div
+                                class="chat-card__main chat-card__main-archived"
+                            >
+                                Archived <span>3</span>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/group-avatar.svg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        Football News and Updates
+                                    </p>
+                                    <span class="chat-card__date">
+                                        4/16/2023
+                                    </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        You: Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <ion-icon
+                                        name="bookmark"
+                                        class="chat-card__pinned"
+                                    ></ion-icon>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card chat-card--active">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/group-avatar.svg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        OP Techies Club
+                                    </p>
+                                    <span class="chat-card__date">
+                                        4/16/2023
+                                    </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        You: Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <ion-icon
+                                        name="bookmark"
+                                        class="chat-card__pinned"
+                                    ></ion-icon>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card chat-card--unread">
+                            <div class="chat-card__left">
+                                <div class="chat-card__community">
+                                    <div>
+                                        <img
+                                            src="./assets/img/empty.svg"
+                                            alt=""
+                                            class="chat-card__img"
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="./assets/img/empty.svg"
+                                            alt=""
+                                            class="chat-card__img"
+                                        />
+                                    </div>
+                                    <div>
+                                        <img
+                                            src="./assets/img/sentry.jfif"
+                                            alt=""
+                                            class="chat-card__img"
+                                        />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        Group v Group Debates
+                                    </p>
+                                    <span class="chat-card__date"> 12:40 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        Lorem ipsum dolor sit amet...
+                                    </p>
+                                    <span class="chat-card__badge">10</span>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/user-avatar.svg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">Scammer</p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        Just dey play
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div
+                                    class="chat-card__img-block chat-card__img-block--status"
+                                >
+                                    <img
+                                        src="./assets/img/mikey.jpg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">Mikey Boss</p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        Sup have you reviewed the code I pushed
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div
+                                    class="chat-card__img-block chat-card__img-block--status"
+                                >
+                                    <img
+                                        src="./assets/img/akashi.webp"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        Sejuiro Akashi
+                                    </p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        Ask Shintaro
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/unnamed.jpg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">Bob Reynolds</p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        Bro get rid of the Void man
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/thor.webp"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        The GOAT of Thunder
+                                    </p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        Can you commute to Asgard for a dev role
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/may.jpg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">
+                                        Agent May S.H.I.E.L.D
+                                    </p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        Agent Daisy Johnson is going to be your
+                                        S.O
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/skye.webp"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">Quake</p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        May said you're going to be my S.O
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="chat-card">
+                            <div class="chat-card__left">
+                                <div class="chat-card__img-block">
+                                    <img
+                                        src="./assets/img/unnamed.jpg"
+                                        alt=""
+                                        class="chat-card__img"
+                                    />
+                                </div>
+                            </div>
+                            <div class="chat-card__main">
+                                <div class="chat-card__name-date">
+                                    <p class="chat-card__name">Bob Reynolds</p>
+                                    <span class="chat-card__date"> 10:00 </span>
+                                </div>
+                                <div class="chat-card__footer">
+                                    <p class="chat-card__last-msg">
+                                        <ion-icon
+                                            name="checkmark-done-outline"
+                                        ></ion-icon>
+                                        Bro get rid of the Void man
+                                    </p>
+                                    <span class="chat-card__more">
+                                        <ion-icon
+                                            name="chevron-down-outline"
+                                        ></ion-icon>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+                <section class="main-content nac">
+                    <div class="nav__main">
+                        <img
+                            src="./assets/img/whatsappweb.svg"
+                            alt=""
+                            class="nac__image"
+                        />
+                        <h3 class="nac__heading">WhatsApp Web</h3>
+                        <p class="nac__text">
+                            Send and receive message without keeping your phone
+                            online.<br />Use WhatsApp on up to 4 linked devices
+                            and 1 phone at the same time.
+                        </p>
+                    </div>
+                    <p class="nac__label">
+                        <ion-icon name="lock-closed"></ion-icon>
+                        End-to-end encrypted
+                    </p>
+                </section>
+            </div>
+        </main>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
+</html>

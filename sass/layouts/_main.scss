@@ -1,0 +1,34 @@
+.main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: $app-bg;
+
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 12.6rem;
+        background-color: $color-primary;
+        z-index: -1;
+    }
+}
+
+.dashboard {
+    background-color: $color-white;
+    height: calc(100vh - 4rem);
+    width: 160rem;
+    max-width: 100%;
+    margin: 0 auto;
+    box-shadow: 0 6px 18px rgba(11, 20, 26, 0.05);
+
+    display: flex;
+}

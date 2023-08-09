@@ -1,0 +1,316 @@
+.message {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.6rem;
+
+    &--me {
+        direction: rtl;
+        align-self: flex-end;
+    }
+
+    &__img {
+        display: block;
+        width: 2.6rem;
+        height: 2.6rem;
+        border-radius: 50%;
+    }
+
+    &__main {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 3px;
+
+        width: 65rem;
+        max-width: 80%;
+    }
+
+    &--me &__main * {
+        direction: ltr;
+    }
+
+    &__msg {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+
+        padding: 4px;
+        border-radius: 4px;
+        background-color: $color-white;
+
+        &--img-p {
+            max-width: 25rem;
+        }
+
+        &--img-l {
+            max-width: 35rem;
+        }
+    }
+
+    &--me &__msg {
+        background-color: #d9fdd3;
+    }
+
+    &__reply {
+        background-color: $header-bg;
+        padding: 8px;
+        border-radius: 0.8rem;
+
+        &--media {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.6rem;
+
+            padding: 0;
+            overflow: hidden;
+        }
+
+        &--1 {
+            border-left: 4px solid #06cf9c;
+        }
+
+        &--2 {
+            border-left: 4px solid #c89631;
+        }
+
+        &--3 {
+            border-left: 4px solid #c4532d;
+        }
+
+        &--4 {
+            border-left: 4px solid #7f66ff;
+        }
+
+        &--5 {
+            border-left: 4px solid #ff2e74;
+        }
+
+        &--6 {
+            border-left: 4px solid #007bfc;
+        }
+    }
+
+    &--me &__reply {
+        background-color: #d1f4cc;
+    }
+
+    &__reply-main {
+        padding: 8px;
+    }
+
+    &__reply-media {
+        min-width: 6rem;
+        max-width: 6rem;
+
+        align-self: stretch;
+        position: relative;
+
+        & img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &__reply-txt {
+        font-size: 1.3rem;
+        color: #777;
+
+        & ion-icon {
+            display: inline-block;
+            width: 1.6rem;
+            height: 1.6rem;
+            margin-bottom: -3px;
+        }
+    }
+
+    &__name {
+        display: flex;
+        align-items: center;
+        gap: 1.2rem;
+
+        font-size: 1.35rem;
+        padding-left: 4px;
+
+        &--1 {
+            color: #06cf9c;
+        }
+
+        &--2 {
+            color: #c89631;
+        }
+
+        &--3 {
+            color: #c4532d;
+        }
+
+        &--4 {
+            color: #7f66ff;
+        }
+
+        &--5 {
+            color: #ff2e74;
+        }
+
+        &--6 {
+            color: #007bfc;
+        }
+
+        & span {
+            font-size: 1rem;
+            color: #667781;
+        }
+    }
+
+    &__txt {
+        display: flex;
+        flex-direction: column;
+
+        font-size: 1.5rem;
+        padding-left: 4px;
+
+        p {
+            &::after {
+                content: "";
+                display: inline-block;
+                width: 6.2rem;
+            }
+
+            span {
+                color: #53bdeb;
+                cursor: pointer;
+            }
+        }
+    }
+
+    &__image {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    &__date-check {
+        margin-top: -1.6rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 3px;
+
+        font-size: 1.2rem;
+        color: #667781;
+
+        & ion-icon {
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            color: #53bdeb;
+        }
+
+        &--no-text {
+            color: #fff;
+            margin-top: -2rem;
+            margin-right: 4px;
+        }
+    }
+
+    &__audio {
+        padding: 4px;
+        padding-left: 8px;
+
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__audio-main {
+        align-self: flex-end;
+
+        display: flex;
+        flex-direction: column;
+        gap: 3px;
+    }
+
+    &__audio-aud {
+        display: flex;
+        align-items: center;
+        gap: 1.6rem;
+    }
+
+    &__audio-icon {
+        display: block;
+        width: 2.4rem;
+        height: 2.4rem;
+        color: #9c8d8d;
+    }
+
+    &__audio-lines {
+        display: flex;
+        align-items: center;
+        gap: 2px;
+
+        height: 2rem;
+    }
+
+    &__audio-line {
+        width: 3px;
+        border-radius: 10rem;
+        background-color: $header-bg;
+
+        &--passed {
+            background-color: #9c8d8d;
+        }
+    }
+
+    &--me &__audio-line {
+        background-color: rgba(84, 101, 111, 0.5);
+    }
+
+    &--me &__audio-line--passed {
+        background-color: #9c8d8d;
+    }
+
+    &__audio-times {
+        padding-left: 4rem;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        font-size: 1.2rem;
+        color: #667781;
+
+        & ion-icon {
+            display: block;
+            width: 1.6rem;
+            height: 1.6rem;
+            color: #53bdeb;
+        }
+    }
+
+    &__audio-person {
+        position: relative;
+
+        & img {
+            display: block;
+            width: 5.2rem;
+            height: 5.2rem;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+
+        & ion-icon {
+            position: absolute;
+            bottom: 0;
+            left: -3px;
+
+            display: block;
+            width: 2.4rem;
+            height: 2.4rem;
+            color: #53bdeb;
+        }
+    }
+}
